@@ -49,7 +49,8 @@
 <summary>Ejercicio 1</summary>
 <br>
 <p align="center">
-  
+  ![image alt]https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/0a4202739e37d6cb471d3668263d852d52ea9e77/E1.png
+
 </p>
 </details>
 
