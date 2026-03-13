@@ -49,15 +49,37 @@
 <summary>Ejercicio 1</summary>
 <br>
 <p align="center">
-  ![image alt]https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/0a4202739e37d6cb471d3668263d852d52ea9e77/E1.png
-
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/0a4202739e37d6cb471d3668263d852d52ea9e77/E1.png" />
 </p>
+</details>
+
+<details>
+<summary>Ejercicio 2</summary>
+<br>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/0a4202739e37d6cb471d3668263d852d52ea9e77/E2-1.png"/>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/0a4202739e37d6cb471d3668263d852d52ea9e77/E2-2.png"/>
+</details>
+
+<details>
+<summary>Ejercicio 3</summary>
+<br>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E3-1C.png"/>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E3-2.png"/>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E3-3.png"/>
+</details>
+
+<details>
+<summary>Ejercicio 4</summary>
+<br>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E4-1.png"/>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E4-2.png"/>
+<img width="270" height="600" alt="Logo IPN" src="https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles/blob/90d30c53d620760b21f1dd8b2367d9a905ade8f9/E4-3.png"/>
 </details>
 
 ---
 
 ### INSTRUCCIONES DE USO: 
-1. Abrir Android Studio.
+1. Abrir Visual Studio Code.
 2. Seleccionar clone repository
 3. Ingresar la URL del repositorio en donde solicita el link
 4. Dar click en clone
