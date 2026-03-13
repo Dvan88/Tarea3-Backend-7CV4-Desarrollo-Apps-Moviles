@@ -9,6 +9,9 @@ import android.widget.Spinner
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import java.net.ConnectException
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
 
 class MainActivity : AppCompatActivity() {
 
@@ -54,10 +57,16 @@ class MainActivity : AppCompatActivity() {
                         textViewMessage.text = "Respuesta vacía"
                     }
                 } else {
-                    textViewMessage.text = "Error: ${response.code()}"
+                    textViewMessage.text = "Error del servidor: ${response.code()}"
                 }
             } catch (e: Exception) {
-                textViewMessage.text = "Error de red: ${e.message}"
+                val friendlyMessage = when (e) {
+                    is ConnectException -> "No se pudo conectar al servidor. Verifica que el servicio esté corriendo."
+                    is SocketTimeoutException -> "Tiempo de espera agotado. El servidor tarda mucho en responder."
+                    is UnknownHostException -> "No se encontró la dirección del servidor. Revisa tu red."
+                    else -> "Error de conexión: ${e.localizedMessage}"
+                }
+                textViewMessage.text = friendlyMessage
             }
         }
     }

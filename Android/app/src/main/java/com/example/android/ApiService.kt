@@ -9,6 +9,9 @@ interface ApiService {
     @POST("/register")
     suspend fun registerUser(@Body request: RegisterRequest): Response<RegisterResponse>
 
+    @POST("/login")
+    suspend fun loginUser(@Body request: LoginRequest): Response<LoginResponse>
+
     @GET("/")
     suspend fun checkApi(): Response<ApiCheckResponse>
 }

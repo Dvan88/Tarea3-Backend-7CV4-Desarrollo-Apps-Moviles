@@ -10,6 +10,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import java.net.ConnectException
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
 
 class RegisterFragment : Fragment() {
 
@@ -47,7 +50,13 @@ class RegisterFragment : Fragment() {
                             Toast.makeText(requireContext(), "Usuario ya existe o error: ${response.code()}", Toast.LENGTH_SHORT).show()
                         }
                     } catch (e: Exception) {
-                        Toast.makeText(requireContext(), "Error de red: ${e.localizedMessage}", Toast.LENGTH_SHORT).show()
+                        val friendlyMessage = when (e) {
+                            is ConnectException -> "No se pudo conectar al servidor. Verifica que el servicio esté corriendo."
+                            is SocketTimeoutException -> "Tiempo de espera agotado. El servidor tarda mucho en responder."
+                            is UnknownHostException -> "No se encontró la dirección del servidor. Revisa tu red."
+                            else -> "Error de conexión: ${e.localizedMessage}"
+                        }
+                        Toast.makeText(requireContext(), friendlyMessage, Toast.LENGTH_LONG).show()
                     } finally {
                         btnRegister.isEnabled = true
                     }
