@@ -44,6 +44,38 @@
 
 ---
 
+### INSTRUCCIONES DE USO: 
+1. Crear o elegir una carpeta para guardar el repositorio
+2. Abrir la carpeta
+3. Dar click derecho y abrir una terminal
+4. Pegar el siguiente codigo: git clone https://github.com/Dvan88/Tarea3-Backend-7CV4-Desarrollo-Apps-Moviles.git
+5. Abrir Visual Studio Code
+6. Ir a source control
+7. Abrir un folder y seleccionar la carpeta donde clonaste el repositorio
+8. Tener instalado PostgreSQL y Docker.
+9. Abrir Docker. 
+10. En VS code, abrir una terminal y checar que este en la carpeta de Backend. De no ser asi hacer un CD
+11. Insertar el siguiente comando para arrancar el backend. docker compose up --build
+12. En otra terminal puedes corroborar el funcionamiento con curl http://localhost:5000/
+13. Abrir Android Studio
+14. Abrir una carpeta e ir a la carpeta donde guardamos el repositorio, pero abriendo solo lo que hay dentro de Android. No se debe abrir la parte del Backend
+15. Dirigirse a app/kotlin+java/com.example.android/ y abrir el archivo RetrofitInstance.kt y cambiar la baseURL, siendo que si se ejecuta en un emulador local se ocupa la dirección http://10.0.2.2:5000/, pero si es en un dispositivo se debe cambiar por la IP de la computadora http://(IPdetuPC):5000/  
+16. Seleccionar un emulador y correr el programa
+
+<br>
+
+Nota: Comandos_Importantes.txt sirve para que puedas checar tu base de datos, ejecutar el docker, pararlo y eliminar los datos y hacer sentencias que hace la aplicacion android pero mediante otra terminal.
+
+---
+
+### Descripcion de la APP
+<p>
+Esta aplicación es un backend junto con una aplicación de Android studio que nos permite ejecutar una base de datos mediante el uso de distintos componentes como Docker, FLASK y una base de datos de PostgreSQL, y junto a esto, incluye una aplicación con 4 pantallas que nos indica si tiene conexión con el servidor, para poder registrarse y otra para iniciar sesión que te manda a una pantalla de bienvenida con tu nombre.
+</p>
+
+
+---
+
 ### ejercicios
 <details>
 <summary>Ejercicio 1</summary>
@@ -77,18 +109,3 @@
 </details>
 
 ---
-
-### INSTRUCCIONES DE USO: 
-1. Abrir Visual Studio Code.
-2. Seleccionar clone repository
-3. Ingresar la URL del repositorio en donde solicita el link
-4. Dar click en clone
-5. Esperar a que clone el repositorio
-6. Seleccionar un dispositivo para ejecutar la aplicación
-7. Dar en Run para correr la aplicación
-8. Una vez que abra la aplicación, dar click en seleccionar una actividad
-9. Hacer lo mismo hasta ver todas las activity disponible
-
----
-
-
