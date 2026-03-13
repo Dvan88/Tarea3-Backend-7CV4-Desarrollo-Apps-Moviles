@@ -76,7 +76,7 @@ Esta aplicación es un backend junto con una aplicación de Android studio que n
 
 ---
 
-### ejercicios
+### Ejercicios
 <details>
 <summary>Ejercicio 1</summary>
 <br>
