@@ -3,23 +3,21 @@ package com.example.android
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var textViewMessage: TextView
     private lateinit var spinnerMenu: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_register)
 
-        textViewMessage = findViewById(R.id.textViewMessage)
         spinnerMenu = findViewById(R.id.spinnerMenu)
 
         val options = arrayOf("Selecciona acción", "Conexión", "Registrar", "Login")
@@ -28,11 +26,11 @@ class MainActivity : AppCompatActivity() {
         spinnerMenu.adapter = adapter
 
         spinnerMenu.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: android.view.View?, position: Int, id: Long) {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 when (position) {
-                    1 -> {  }
-                    2 -> startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
-                    3 -> startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                    1 -> startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+                    2 -> {  }
+                    3 -> startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
                 }
                 spinnerMenu.setSelection(0)
             }
@@ -45,19 +43,9 @@ class MainActivity : AppCompatActivity() {
                 val response = RetrofitInstance.api.checkApi()
                 if (response.isSuccessful) {
                     val body = response.body()
-                    if (body != null) {
-                        val displayText = "Service: ${body.service}\n" +
-                                "Status: ${body.status}\n" +
-                                "Version: ${body.version}"
-                        textViewMessage.text = displayText
-                    } else {
-                        textViewMessage.text = "Respuesta vacía"
-                    }
                 } else {
-                    textViewMessage.text = "Error: ${response.code()}"
                 }
             } catch (e: Exception) {
-                textViewMessage.text = "Error de red: ${e.message}"
             }
         }
     }
