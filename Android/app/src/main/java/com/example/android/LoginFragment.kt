@@ -44,7 +44,6 @@ class LoginFragment : Fragment() {
                     try {
                         val response = RetrofitInstance.api.loginUser(LoginRequest(username, password))
                         if (response.isSuccessful) {
-                            // Login correcto → abrir WelcomeActivity
                             val intent = Intent(requireContext(), BienvenidaActivity::class.java)
                             intent.putExtra("username", username)
                             startActivity(intent)
