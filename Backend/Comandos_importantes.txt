@@ -1,0 +1,31 @@
+Levantar el servidor:
+docker compose up --build
+
+Detener y eliminar el servidor:
+docker compose down
+
+Verificar API:
+curl http://localhost:5000/
+
+Registrar Usuario:
+Invoke-RestMethod ` -Uri "http://localhost:5000/register" ` -Method POST ` -Headers @{"Content-Type"="application/json"} ` -Body '{"username":"prueba","password":"123456"}'
+
+Login
+Invoke-RestMethod ` -Uri "http://localhost:5000/login" ` -Method POST ` -Headers @{"Content-Type"="application/json"} ` -Body '{"username":"prueba","password":"123456"}'
+
+
+Base de datos desde cmd:
+Entrar desde cmd:
+docker exec -it postgres_db psql -U postgres -d user_auth_db
+
+ver tablas:
+\dt
+
+Estructura de la tabla:
+\d users
+
+Usuarios guardados:
+SELECT * FROM users;
+
+Salir:
+\q
