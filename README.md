@@ -68,14 +68,4 @@
 
 ---
 
-<details>
-<summary><b>Ver capturas de la aplicación</b></summary>
-<br>
-<img width="270" height="600" alt="Screenshot_20260306-131138_com example tarea1" src="https://github.com/user-attachments/assets/3228df16-efc4-45bc-98a0-5741313e7ca3" />
-<img width="270" height="600" alt="Screenshot_20260306-131149_com example tarea1" src="https://github.com/user-attachments/assets/05034064-9bd6-4fe0-9256-1dab934e454f" />
-<img width="270" height="600" alt="Screenshot_20260306-131154_com example tarea1" src="https://github.com/user-attachments/assets/754feed1-dc20-42e6-9602-54cfd7f8fa06" />
-<img width="270" height="600" alt="Screenshot_20260306-131158_com example tarea1" src="https://github.com/user-attachments/assets/a11142fd-7309-445c-bf59-51c48677ee64" />
-<img width="270" height="600" alt="Screenshot_20260306-131216_com example tarea1" src="https://github.com/user-attachments/assets/d15cdae6-c1b8-4d4a-9df1-553bb6693ead" />
-<img width="270" height="600" alt="Screenshot_20260306-131222_com example tarea1" src="https://github.com/user-attachments/assets/46554931-fa77-4486-b85f-40d1f8d44bf1" />
-<img width="270" height="600" alt="Screenshot_20260306-131231_com example tarea1" src="https://github.com/user-attachments/assets/32fba221-da24-471b-bea5-ec0dbac481cc" />
-</details>
+
